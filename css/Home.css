@@ -1,0 +1,145 @@
+body{
+    background-color: #f8f5f5;
+}
+main > div{
+    width: 100%;
+}
+#upper{
+    width: 100%;
+    height: 60vh;
+    background-image: url("../images/main.jpg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: animateBackground 20s linear infinite alternate;
+    padding: 11% 0px 0px 0px;
+    margin-top: 44px;
+}
+#upper p, #upper h1{
+    color: white;
+    font-size: 2em;
+    
+}
+@keyframes animateBackground {
+    0%{background-position: 0 0;}
+    50%{background-position: 100% 100%;}
+    100%{background-position: 0 100%;}
+}
+@keyframes left-to-right {
+    from{left: 0%;}
+    to{left:45%;}
+}
+@keyframes right-to-left {
+    from{right: 0%;}
+    to{right:40%;}
+}
+@keyframes appear {
+    from{width: 0px;height: 0px;}
+    to{width: 150px;height: 44px;}
+}
+@keyframes appearlink {
+    from{font-size: 0em;}
+    to{font-size: 0.7em;}
+}
+@keyframes alert {
+    0%{transform: none;}
+    10%{transform: rotate(10deg);}
+    20%{transform: rotate(-10deg);}
+    30%{transform: rotate(0deg);}
+}
+#upper h1{
+    position: relative;
+    animation-name: left-to-right ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#name{
+    text-align: right;
+    position: relative;
+    animation-name: right-to-left;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#motto{
+   text-align: center;
+}
+#more{
+    min-width: 10px;
+    max-width: 150px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: green;
+    padding: 1%;
+    border-radius: 10px;
+    animation-name: appear;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-name: alert;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+#more a{
+    text-decoration: none;
+    color: white;
+    animation-name: appearlink;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#more:hover{
+    transition: 0.5s;
+    transform: scale3d(1.2, 1.2, 0.3);
+}
+#content{
+    background-color: rgb(241, 241, 235);
+    box-shadow: 0px 0px 6px rgb(66, 82, 82);
+    width: 70%;
+    margin: 40px auto;
+    padding: 4% 4%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#main-image{
+    width: 50%;
+    border-radius: 6px;
+    box-shadow: 6px 6px 10px rgb(102, 100, 100);
+}
+#content p{
+    width: 40%;
+    margin: auto 5px;
+    font-size: 1.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 4px;
+    opacity: 0.7;
+    text-align: justify;
+}
+@media only screen and (max-width: 850px) {
+    #content{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #content p{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    #main-image{
+        width: 80%;
+        margin: 22px auto;
+    }
+    #name, #upper h1{
+       left: -22%;
+    }
+   
+    
+}

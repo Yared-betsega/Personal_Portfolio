@@ -1,0 +1,24 @@
+#main-content{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-evenly;
+}
+.second img{
+    width: 100%;
+}
+.third, .fourth{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto auto;
+}
+table th, table td{
+    border: 2px solid black;
+    margin: 62%;
+}
+.fourth{
+    width: 20%;
+}
+.fourth img{
+    width: 22%;
+}
