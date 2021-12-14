@@ -85,7 +85,7 @@ nav{
     display: none;
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 600px){
     #main-header{
         background:linear-gradient(90deg, rgb(138, 134, 134), black 60%);
     }
