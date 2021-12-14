@@ -1,5 +1,6 @@
 body{
     background-color: #f8f5f5;
+    width: 100vw;
 }
 main > div{
     width: 100%;
@@ -11,9 +12,10 @@ main > div{
     background-position: 0px 0px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: animateBackground 20s linear infinite alternate;
+    background-size: cover;
+    animation: animateBackground 40s linear infinite alternate;
     padding: 11% 0px 0px 0px;
-    margin-top: 44px;
+    margin-top: 15vh;
 }
 #upper p, #upper h1{
     color: white;
@@ -25,13 +27,9 @@ main > div{
     50%{background-position: 100% 100%;}
     100%{background-position: 0 100%;}
 }
-@keyframes left-to-right {
-    from{left: 0%;}
-    to{left:45%;}
-}
-@keyframes right-to-left {
-    from{right: 0%;}
-    to{right:40%;}
+@keyframes appeartext {
+    from{font-size: 0em;}
+    to{font-size: 2em;}
 }
 @keyframes appear {
     from{width: 0px;height: 0px;}
@@ -39,7 +37,7 @@ main > div{
 }
 @keyframes appearlink {
     from{font-size: 0em;}
-    to{font-size: 0.7em;}
+    to{font-size: 0.8em;}
 }
 @keyframes alert {
     0%{transform: none;}
@@ -47,51 +45,41 @@ main > div{
     20%{transform: rotate(-10deg);}
     30%{transform: rotate(0deg);}
 }
-#upper h1{
-    position: relative;
-    animation-name: left-to-right ;
+#upper h1, #name, #motto{
+    font-family: Helvetica,Arial, sans-serif;
+    opacity: 0.9;
+    text-align: center;
+    animation-name: appeartext;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-}
-#name{
-    text-align: right;
-    position: relative;
-    animation-name: right-to-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-#motto{
-   text-align: center;
 }
 #more{
-    min-width: 10px;
-    max-width: 150px;
     margin: 0px auto;
     text-align: center;
-    background-color: green;
-    padding: 1%;
-    border-radius: 10px;
-    animation-name: appear;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
     animation-name: alert;
     animation-duration: 2s;
     animation-delay: 1.4s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-
 }
 #more a{
-    text-decoration: none;
-    color: white;
-    animation-name: appearlink;
+    min-width: 10px;
+    max-width: 150px;
+    margin: 0px auto;
+    background-color: green;
+    font-size: 0.9em;
+    padding: 1%;
+    opacity: 0.8;
+    border-radius: 10px;
+    animation-name: appear;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+    text-decoration: none;
+    color: white;
+    
 }
 #more:hover{
     transition: 0.5s;
@@ -122,6 +110,14 @@ main > div{
     text-align: justify;
 }
 @media only screen and (max-width: 850px) {
+    #upper{
+        animation: animateBackground 100s linear infinite alternate;
+    }
+    #upper h1, #name{
+     
+        width: 100vw;
+        text-align: center;
+    }
     #content{
         margin: 10px auto;
         display: flex;
@@ -140,6 +136,8 @@ main > div{
     #name, #upper h1{
        left: -22%;
     }
-   
+   #more a{
+       padding: 4%;
+   }
     
 }
