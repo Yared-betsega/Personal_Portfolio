@@ -1,32 +1,113 @@
+body{
+    width: 100vw;
+}
+main{
+    background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0, 0.966) 45%);
+    width: 100vw;
+}
 #main-content{
+    margin-top: 15vh;
+    padding: 3%;
     display: grid;
     grid-template-columns: 44% 44%;
     justify-content: space-evenly;
 }
 .contents{ 
-    padding: 10%;
+    color: white;
+    margin: 3%;
+    height: 92%;
+    background-color: #0a1520;
+    border-radius: 12px;
+    border: 1px solid rgb(53, 52, 52);
+}
+.contents h1, .contents p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1%;
+    text-align: center;
+    opacity: 0.8;
+}
+.box1 article{
+    width: 66%;
+    height: 50%;
+    margin: 50% auto;
+}
+.box2{
+    background-color: inherit;
 }
 .box2 img{
     width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
-.box1 h1, .box1 p{
-    position: relative;
-    top: 40%;
+.box3{
+    background-color: inherit;
+}
+.box3 table{
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    width: 100%;
+    opacity: 0.9;
+}
+.box4{
+    padding: 4%;
+}
+tr{
+    background-color: rgb(2, 63, 45);
+}
+th, td{
+    border-bottom: 1px solid grey;
+    padding: 4%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+td{
+    padding-left: 22%;
+}
+.title{
+    background-color: rgb(1, 41, 29);
+    font-size: 2em;
 }
 .buttonLikes{
     color: white;
     text-align: center;
     font-size: 2em;
+    margin: 0px;
+    height: 9vh;
 }
 .buttonLikes a{
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-decoration: none;
     color: white;
-    background-color: green;
+    background-color: darkcyan;
     padding: 1%;
     border-radius: 10px;
 }
 .buttonLikes a:hover {
+    background:linear-gradient(to right, rgb(184, 3, 144), rgb(243, 70, 2));
     font-size: 1em;
     transition: 0.5s;
+}
+@media only screen and (max-width: 850px){
+    #main-content{
+        padding: 4%;
+        height: 100%;
+        background: linear-gradient(45deg, #240000, black 45%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .contents{
+        margin: 2%;
+    }
+    .box3 h1{
+        font-size: 1em;
+    }
+    th, td{
+        border-bottom: 1px solid grey;
+        padding: 4%;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
 }
