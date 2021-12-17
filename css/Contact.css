@@ -1,7 +1,22 @@
+body{
+    width: 100vw;
+}
+main{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
+    display: flex;
+    flex-direction: column;
+}
+p, h1{
+    opacity: 0.8;
+}
 #main-content{
+    margin-top: 15vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 37% 37%;
     justify-content: space-evenly;
 }
 #second{
@@ -10,7 +25,8 @@
     grid-column-start: 2;
 }
 fieldset{
-    border: 2px solid darkcyan;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 2%;
 }
 legend{
     color: white;
@@ -18,19 +34,45 @@ legend{
     padding: 6px;
 }
 input{
+    color: white;
+    background-color: inherit;
     display: block;
-    height: 22px;
-    margin: 12px;
-    border: 1px inset rgb(228, 18, 18);
+    width: 75%;
+    height: 30px;
+    margin: 22px;
+    border-bottom: 1.5px inset rgb(255, 255, 255);
+    border-top: none;
     border-radius: 5px;
 }
-input:focus{
-    background-color: rgb(243, 244, 245);
+input::placeholder{
+    color: white;
+    opacity: 0.9;
+    font-size: 1.2em;
+}
+input:focus, textarea:focus{
+    width: 90%;
+    border-bottom: 1px inset darkcyan;
+    border-top: none;
+    font-size: 1em;
+    transition: 0.4s;
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
 }
 textarea{
-    border: 1px inset rgb(228, 18, 18);
+    color: white;
+    background-color: inherit;
+    border-bottom: 1.5px inset rgb(255, 255, 255);
+    display: block;
+    width: 75%;
+    margin: 22px;
+    border-top: none;
     border-radius: 5px;
-    margin: 0px 12px 12px 12px;
+}
+textarea::placeholder{
+    color: white;
+    opacity: 0.9;
+    font-size: 1.4em;
 }
 input[type="submit"]{
     width: 30%;
@@ -45,7 +87,7 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
     background-color: darkcyan;
-    color: rgb(232, 248, 0);
+    color: rgb(0, 0, 0);
     transition: 0.5s;
     width: 50%;
 }
@@ -62,6 +104,7 @@ input[type="submit"]:active{
 }
 .personal{
     display: flex;
+    flex-direction: row;
     margin: 22px;
 }
 #fourth h1{
@@ -76,6 +119,32 @@ aside p{
 }
 aside a{
     text-decoration: none;
-    color: blue;
-    margin-top: opx;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+}
+@media only screen and (max-width: 700px){
+    #main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #main-content > div{
+        width: 80%;
+        margin: auto;
+    }
+    aside img{
+        width: 22px;
+        height: 10px;
+    }
+    aside p{
+        font-size: 0.5em;
+        margin: 0px 6px;
+    }
+    aside a{
+        font-size: 0.5em;
+        margin-top: 0px;
+    }
+    #fourth h1{
+        font-size: 1em;
+    }
 }
