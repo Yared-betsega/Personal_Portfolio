@@ -2,6 +2,14 @@ body{
     background-color: #f8f5f5;
     width: 100vw;
 }
+main{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
+    display: flex;
+    flex-direction: column;
+}
 main > div{
     width: 100%;
 }
@@ -37,7 +45,7 @@ main > div{
 @keyframes appearlink {
     from{font-size: 0em;}
     to{font-size: 0.8em;}
-}
+} 
 @keyframes alert {
     0%{transform: none;}
     10%{transform: rotate(10deg);}
@@ -85,10 +93,7 @@ main > div{
     transform: scale3d(1.2, 1.2, 0.3);
 }
 #content{
-    background-color: rgb(241, 241, 235);
-    box-shadow: 0px 0px 6px rgb(66, 82, 82);
-    width: 60%;
-
+    width: 70%;
     margin: 40px auto;
     padding: 4% 4%;
     border-radius: 20px;
@@ -98,7 +103,7 @@ main > div{
 #main-image{
     width: 50%; 
     border-radius: 6px;
-    box-shadow: 6px 6px 10px rgb(102, 100, 100);
+    box-shadow: 6px 6px 10px rgb(3, 3, 3);
 }
 #content p{
     width: 40%;
@@ -107,7 +112,6 @@ main > div{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     word-spacing: 4px;
     opacity: 0.7;
-    text-align: justify;
 }
 @media only screen and (max-width: 850px) {
     #upper{
