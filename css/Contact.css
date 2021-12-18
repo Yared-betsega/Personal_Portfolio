@@ -33,6 +33,10 @@ legend{
     color: white;
     background-color: darkcyan;
     padding: 6px;
+    opacity: 1;
+}
+label{
+    color: black;
 }
 input{
     background-color: rgb(231, 229, 229);

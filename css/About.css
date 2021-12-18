@@ -14,6 +14,7 @@ main{
 .first p{
     opacity: 0.8;
     margin: 6%;
+    font-size: 1.4em;
 }
 .second img{
     width: 100%;
@@ -23,7 +24,7 @@ main{
 .third, .fourth{
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 60%;
+    width: 60%; 
     margin: auto auto;
 }
 .fourth{
@@ -38,9 +39,10 @@ main{
     opacity: 0.9;
 }
 tr{
-    background-color: rgb(2, 63, 45);
+    background-color: rgb(207, 206, 206);
 }
 th, td{
+    color: rgb(0, 0, 0);
     border-bottom: 1px solid grey;
     padding: 4%;
     font-weight: bold;
@@ -49,6 +51,12 @@ th, td{
 td{
     padding-left: 22%;
 }
+.title{
+    color: white !important;
+    background-color: darkcyan;
+    font-size: 2em;
+}
+
 aside p{
     display: flex;
 }

@@ -75,7 +75,7 @@ main > div{
     min-width: 10px;
     max-width: 150px;
     margin: 0px auto;
-    background-color: green;
+    background-color: white;
     font-size: 0.9em;
     padding: 1%;
     opacity: 0.8;
@@ -85,7 +85,7 @@ main > div{
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     
 }
 #more:hover{
@@ -111,7 +111,7 @@ main > div{
     font-size: 1.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     word-spacing: 4px;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 @media only screen and (max-width: 850px) {
     #upper{
