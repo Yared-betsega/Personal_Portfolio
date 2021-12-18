@@ -9,7 +9,7 @@ main{
     margin-top: 15vh;
     padding: 3%;
     display: grid;
-    grid-template-columns: 44% 44%;
+    grid-template-columns: 40% 40%;
     justify-content: space-evenly;
 }
 .contents{ 
@@ -41,10 +41,9 @@ main{
 }
 .box3{
     background-color: inherit;
-}
+} 
 .box3 table{
     border-collapse: collapse;
-    color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     margin-top: 5%;
     width: 100%;
@@ -54,9 +53,10 @@ main{
     padding: 4%;
 }
 tr{
-    background-color: rgb(2, 63, 45);
+    background-color: rgb(207, 206, 206);
 }
 th, td{
+    color: rgb(0, 0, 0);
     border-bottom: 1px solid grey;
     padding: 4%;
     font-weight: bold;
@@ -66,7 +66,7 @@ td{
     padding-left: 22%;
 }
 .title{
-    background-color: rgb(1, 41, 29);
+    background-color: darkcyan;
     font-size: 2em;
 }
 .buttonLikes{

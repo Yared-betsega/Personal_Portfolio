@@ -26,7 +26,7 @@ main{
     margin: 0;
 }
 #upper img{
-    width: 40%;
+    width: 45%;
     height: 100%;
     opacity: 0.8;
     border-radius: 22px;
@@ -95,6 +95,7 @@ main{
     font-size: 0.6em;
     text-decoration: none;
     color: white;
+    opacity: 0.9;
     background-color: darkcyan;
     padding: 1%;
     border-radius: 10px;
@@ -140,11 +141,16 @@ main{
         margin: auto auto;
     }
 }
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 400px){
     #lower{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin-top: 6%;
+    }
+    .experience{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
