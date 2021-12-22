@@ -1,153 +1,155 @@
-body{
-    width: 100vw;
+body {
+  width: 100vw;
 }
-main{
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
+main {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
+  display: flex;
+  flex-direction: column;
+}
+p,
+h1 {
+  opacity: 0.8;
+}
+.main-content {
+  margin-top: 15vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 37% 37%;
+  justify-content: space-evenly;
+}
+.main-content__second {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+fieldset {
+  background-color: rgb(238, 232, 232);
+  border: 1.5px solid rgb(255, 255, 255);
+  border-radius: 2%;
+}
+legend {
+  color: white;
+  background-color: darkcyan;
+  padding: 6px;
+  opacity: 1;
+}
+label {
+  color: black;
+}
+input {
+  background-color: rgb(231, 229, 229);
+  display: block;
+  width: 75%;
+  height: 30px;
+  margin: 22px;
+  border-bottom: 1.5px inset rgb(0, 0, 0);
+  border-top: none;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: black;
+  opacity: 0.9;
+  font-size: 1.2em;
+}
+input:focus,
+textarea:focus {
+  width: 90%;
+  border-bottom: 1px inset darkcyan;
+  border-top: none;
+  font-size: 1em;
+  transition: 0.4s;
+  outline: none !important;
+  border-color: #cdcecf;
+  box-shadow: 0 0 10px #719ece;
+}
+textarea {
+  background-color: rgb(231, 229, 229);
+  border-bottom: 1.5px inset rgb(0, 0, 0);
+  display: block;
+  width: 75%;
+  margin: 22px;
+  border-top: none;
+  border-radius: 5px;
+}
+textarea::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.9;
+  font-size: 1.4em;
+}
+input[type="submit"] {
+  width: 30%;
+  font-size: 0.9em;
+  height: 30px;
+  text-decoration: none;
+  color: white;
+  background-color: darkcyan;
+  border: none;
+  border-radius: 6px;
+  margin: 0px auto;
+}
+input[type="submit"]:hover {
+  background-color: rgb(0, 139, 139);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+  width: 40%;
+}
+input[type="submit"]:active {
+  background-color: rgb(53, 56, 53);
+  transition: 0.1s;
+}
+.main-content__third img {
+  width: 100%;
+}
+.main-content__fourth {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.main-content__fourth__personal {
+  display: flex;
+  flex-direction: row;
+  margin: 22px;
+}
+.main-content__fourth h1 {
+  text-align: center;
+}
+aside img {
+  width: 35px;
+  height: 20px;
+}
+aside p {
+  margin: 0px 12px;
+}
+aside a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 0px;
+}
+@media only screen and (max-width: 700px) {
+  .main-content {
     display: flex;
     flex-direction: column;
-}
-p, h1{
-    opacity: 0.8;
-}
-#main-content{
-    margin-top: 15vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 37% 37%;
     justify-content: space-evenly;
-}
-#second{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-}
-fieldset{
-    background-color: rgb(238, 232, 232);
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 2%;
-}
-legend{
-    color: white;
-    background-color: darkcyan;
-    padding: 6px;
-    opacity: 1;
-}
-label{
-    color: black;
-}
-input{
-    background-color: rgb(231, 229, 229);
-    display: block;
-    width: 75%;
-    height: 30px;
-    margin: 22px;
-    border-bottom: 1.5px inset rgb(0, 0, 0);
-    border-top: none;
-    border-radius: 5px;
-}
-input::placeholder{
-    color: black;
-    opacity: 0.9;
-    font-size: 1.2em;
-}
-input:focus, textarea:focus{
-    width: 90%;
-    border-bottom: 1px inset darkcyan;
-    border-top: none;
-    font-size: 1em;
-    transition: 0.4s;
-    outline: none !important;
-    border-color: #cdcecf;
-    box-shadow: 0 0 10px #719ECE;
-}
-textarea{
-    background-color: rgb(231, 229, 229);
-    border-bottom: 1.5px inset rgb(0, 0, 0);
-    display: block;
-    width: 75%;
-    margin: 22px;
-    border-top: none;
-    border-radius: 5px;
-}
-textarea::placeholder{
-    color: rgb(0, 0, 0);
-    opacity: 0.9;
-    font-size: 1.4em;
-}
-input[type="submit"]{
-    width: 30%;
-    font-size: 0.9em;
-    height: 30px;
-    text-decoration: none;
-    color: white;
-    background-color: darkcyan;
-    border: none;
-    border-radius: 6px;
-    margin: 0px auto;
-}
-input[type="submit"]:hover{
-    background-color: rgb(0, 139, 139);
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-    width: 40%;
-}
-input[type="submit"]:active{
-    background-color: rgb(53, 56, 53);
-    transition: 0.1s;
-}
-#third img{
-    width: 100%;
-}
-#fourth{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.personal{
-    display: flex;
-    flex-direction: row;
-    margin: 22px;
-}
-#fourth h1{
-    text-align: center;
-}
-aside img{
-    width: 35px;
-    height: 20px;
-}
-aside p{
-    margin: 0px 12px;
-}
-aside a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  }
+  .main-content > div {
+    width: 80%;
+    margin: auto;
+  }
+  aside img {
+    width: 22px;
+    height: 10px;
+  }
+  aside p {
+    font-size: 0.5em;
+    margin: 0px 6px;
+  }
+  aside a {
+    font-size: 0.5em;
     margin-top: 0px;
-}
-@media only screen and (max-width: 700px){
-    #main-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    #main-content > div{
-        width: 80%;
-        margin: auto;
-    }
-    aside img{
-        width: 22px;
-        height: 10px;
-    }
-    aside p{
-        font-size: 0.5em;
-        margin: 0px 6px;
-    }
-    aside a{
-        font-size: 0.5em;
-        margin-top: 0px;
-    }
-    #fourth h1{
-        font-size: 1em;
-    }
+  }
+  .main-content__fourth h1 {
+    font-size: 1em;
+  }
 }

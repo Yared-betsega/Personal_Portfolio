@@ -12,8 +12,8 @@ function move(className, label, length){
     }
 }
 window.onload = ()=>{
-        className = document.getElementsByClassName("myBar")
-        label = document.getElementsByClassName("label"),
+        className = document.getElementsByClassName("upper__skills-list__myProgress__myBar")
+        label = document.getElementsByClassName("upper__skills-list__myProgress__myBar__label"),
         move(className[0], label[0], 80);
         move(className[1], label[1], 75);
         move(className[2], label[2], 60);

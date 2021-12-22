@@ -1,156 +1,157 @@
-body{
-    width: 100vw;
+body {
+  width: 100vw;
 }
-main{
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
-    display: flex;
-    flex-direction: column;
+main {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background: linear-gradient(45deg, #110d0d, rgba(0, 0, 0) 45%);
+  display: flex;
+  flex-direction: column;
 }
-#upper{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 15vh;
-    padding: 2%;
-    height: fit-content;
-    color: white;
+#upper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15vh;
+  padding: 2%;
+  height: fit-content;
+  color: white;
 }
-.skills-list{
-    width: 100%;
-    margin: 0px 4%;
-    opacity: 0.8;
-} 
-.skills-list h1{
-    margin: 0;
+.upper__skills-list {
+  width: 100%;
+  margin: 0px 4%;
+  opacity: 0.8;
 }
-#upper img{
-    width: 45%;
-    height: 100%;
-    opacity: 0.8;
-    border-radius: 22px;
+.upper__skills-list h1 {
+  margin: 0;
+}
+#upper img {
+  width: 45%;
+  height: 100%;
+  opacity: 0.8;
+  border-radius: 22px;
 }
 
-.myProgress { 
-    position: relative; 
-    width: 100%; 
-    height: 30px; 
-    background-color: rgb(255, 255, 255); 
-    
-} 
-.myBar { 
-    position: absolute; 
-    width: 60%; 
-    height: 100%; 
-    background-color: darkcyan; 
-} 
-.label { 
-    text-align: center; 
-    line-height: 30px; 
-    color: rgb(0, 0, 0); 
-} 
-.center{
-    text-align: center;
-    font: normal 2em verdana;
-    margin: 2%;
-    border-bottom: 1px solid grey;
+.upper__skills-list__myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
 }
-#lower{
-    color: white;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-evenly;
+.upper__skills-list__myProgress__myBar {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-color: darkcyan;
 }
-.experience{
-    margin: 3%;
-    background-color: #01182e;
-    border-radius: 12px;
-    padding: 4%;
-    border: 1px solid rgb(53, 52, 52);
+.upper__skills-list__myProgress__myBar__label {
+  text-align: center;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
 }
-.experience:hover{
-    cursor: pointer;
-    transition: 0.4s;
-    transform: scale3d(1.1, 1.1, 0.3);
+.center {
+  text-align: center;
+  font: normal 2em verdana;
+  margin: 2%;
+  border-bottom: 1px solid grey;
 }
-.experience h1, .experience p{
-    font: normal 1.2em verdana;
-    margin: 1%;
-    text-align: center;
-    opacity: 0.8;
+#lower {
+  color: white;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
 }
-.experience img{
-    display: block;
-    margin: 4% auto;
-    width: 40%;
+.lower__experience {
+  margin: 3%;
+  background-color: #01182e;
+  border-radius: 12px;
+  padding: 4%;
+  border: 1px solid rgb(53, 52, 52);
 }
-.buttonLikes{
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    margin: 1%;
+.lower__experience:hover {
+  cursor: pointer;
+  transition: 0.4s;
+  transform: scale3d(1.1, 1.1, 0.3);
 }
-.buttonLikes a{
-    font-size: 0.6em;
-    text-decoration: none;
-    color: white;
-    opacity: 0.9;
-    background-color: darkcyan;
-    padding: 1%;
-    border-radius: 10px;
-    margin: 0px;
+.lower__experience h1,
+.lower__experience p {
+  font: normal 1.2em verdana;
+  margin: 1%;
+  text-align: center;
+  opacity: 0.8;
+}
+.lower__experience img {
+  display: block;
+  margin: 4% auto;
+  width: 40%;
+}
+.buttonLikes {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin: 1%;
+}
+.buttonLikes a {
+  font-size: 0.6em;
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+  background-color: darkcyan;
+  padding: 1%;
+  border-radius: 10px;
+  margin: 0px;
 }
 .buttonLikes a:hover {
-    background:linear-gradient(to right, rgb(184, 3, 144), rgb(243, 70, 2));
-    font-size: 0.8em;
-    transition: 0.5s;
-    opacity: 0.8;
+  background: linear-gradient(to right, rgb(184, 3, 144), rgb(243, 70, 2));
+  font-size: 0.8em;
+  transition: 0.5s;
+  opacity: 0.8;
 }
-@media only screen and (max-width: 850px){
-    #upper{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    .skills-list{
-        display: grid;
-        grid-template-columns: 40% 40%;
-        justify-content: space-evenly;
-        margin-top: 2%;
-    }
-    .desc, .skills-list h2{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    .skills-list h2{
-        margin-left: 30%;
-    }
-    .skills-list h3{
-        margin-top: 3%;
-    }
-    #lower{
-        display: grid;
-        grid-template-columns: 45% 45%;
-        justify-content: space-evenly;
-        margin-top: 6%;
-    }
-    #upper img{
-        width: 60%;
-        display: block;
-        margin: auto auto;
-    }
+@media only screen and (max-width: 850px) {
+  #upper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .upper__skills-list {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+  .upper__skills-list__desc,
+  .upper__skills-list h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .upper__skills-list h2 {
+    margin-left: 30%;
+  }
+  .upper__skills-list h3 {
+    margin-top: 3%;
+  }
+  #lower {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+    margin-top: 6%;
+  }
+  #upper img {
+    width: 60%;
+    display: block;
+    margin: auto auto;
+  }
 }
-@media only screen and (max-width: 400px){
-    #lower{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 6%;
-    }
-    .experience{
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+@media only screen and (max-width: 400px) {
+  #lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 6%;
+  }
+  .lower__experience {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
