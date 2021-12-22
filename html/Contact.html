@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="../css/Contact.css">
-    <link rel="stylesheet" href="../css/Header.css">
-    <link rel="icon" href="../images/favicon.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/Contact.css" />
+    <link rel="stylesheet" href="../css/Header.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+  </head>
+  <body>
     <header>
-        <div id="main-header">
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <text x="22%" y="50%"
-                    style="font-family: 'Lobster', cursive; font-size: 1.5em;"
-                    >Yared Tsegaye</text>
-            </svg>
-            <nav>
-                <div id="navigator">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="Skills.html">Skills</a> </li>
-                        <li><a href="Career.html">Career</a></li>
-                        <li id="services"><a href="">Services</a>
-                        <ul id="dropdown">
-                            <li class="Services"><a href="Academic_Services.html">Academic Services</a></li>
-                            <li class="Services"><a href="Non_Academic_Services.html">Non Acadmic Servives</a></li>
-                        </ul></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                </div>
-            </nav>
-            <div class="small-screen">
-                <p>&#9776;</p>
-                <div id="navigator">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="Skills.html">Skills</a> </li>
-                    <li><a href="Career.html">Career</a></li>
-                    <li id="services"><a href="">Services</a>
-                    <ul id="dropdown">
-                        <li class="Services"><a href="Academic_Services.html">Academic Services</a></li>
-                        <li class="Services"><a href="Non_Academic_Services.html">Non Acadmic Servives</a></li>
-                    </ul></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-            </div>
-            </div>
+      <div class="header">
+        <svg
+          class="header__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <text
+            x="22%"
+            y="50%"
+            style="font-family: 'Lobster', cursive; font-size: 1.5em"
+          >
+            Yared Tsegaye
+          </text>
+        </svg>
+        <nav class="header__nav">
+          <div class="header__nav__navigator">
+            <li><a href="">Home</a></li>
+            <li><a href="html/Skills.html">Skills</a></li>
+            <li><a href="html/Career.html">Career</a></li>
+            <li id="header__nav__navigator__services">
+              <a href="">Services</a>
+              <ul id="header__nav__navigator__services__dropdown">
+                <li
+                  class="header__nav__navigator__services__dropdown__Services"
+                >
+                  <a href="html/Academic_Services.html">Academic Services</a>
+                </li>
+                <li
+                  class="header__nav__navigator__services__dropdown__Services"
+                >
+                  <a href="html/Non_Academic_Services.html"
+                    >Non Acadmic Servives</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="html/About.html">About</a></li>
+            <li><a href="html/Contact.html">Contact</a></li>
+          </div>
+        </nav>
+        <div class="header__small-screen">
+          <p>&#9776;</p>
+          <div class="header__small-screen__navigator">
+            <li><a href="">Home</a></li>
+            <li><a href="html/Skills.html">Skills</a></li>
+            <li><a href="html/Career.html">Career</a></li>
+            <li id="header__small-screen__navigator__services">
+              <a href="">Services</a>
+              <ul id="header__small-screen__navigator__dropdown">
+                <li class="header__small-screen__navigator__dropdown__Services">
+                  <a href="html/Academic_Services.html">Academic Services</a>
+                </li>
+                <li class="header__small-screen__navigator__dropdown__Services">
+                  <a href="html/Non_Academic_Services.html"
+                    >Non Acadmic Servives</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="html/About.html">About</a></li>
+            <li><a href="html/Contact.html">Contact</a></li>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <div id="main-content">
-            <div id="first">
-                <p>Do you want someone who can improve the productivity of your company? Hire me and you will get what you want.</p>
+      <div id="main-content">
+        <div id="first">
+          <p>
+            Do you want someone who can improve the productivity of your
+            company? Hire me and you will get what you want.
+          </p>
+        </div>
+        <div id="third">
+          <img src="../images/contact.jpg" alt="my image" />
+        </div>
+        <div id="second">
+          <p>Please fill this form so that you can contact me.</p>
+          <fieldset>
+            <legend>Contact Me</legend>
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" name="Name" id="name" placeholder="Name" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <label for="message">Message</label>
+              <textarea
+                name="Message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message..."
+              ></textarea>
+              <input type="submit" name="Send" id="submit" value="Send" />
+            </form>
+          </fieldset>
+        </div>
+        <div id="fourth">
+          <h1>Or Personally</h1>
+          <aside>
+            <div class="personal">
+              <img src="../images/email.png" alt="email" />
+              <p>Email:</p>
+              <a href="mailto:yaredtsegaye120@gmail.com"
+                >yaredtsegaye120@gmail.com</a
+              >
             </div>
-            <div id="third">
-                <img src="../images/contact.jpg" alt="my image">
+            <div class="personal">
+              <img src="../images/call.png" alt="email" />
+              <p>Tel: +251982985676</p>
             </div>
-            <div id="second">
-                <p>Please fill this form so that you can contact me.</p>
-                <fieldset>
-                    <legend>Contact Me</legend>
-                    <form action="">
-                        <label for="name">Name</label>
-                        <input type="text" name="Name" id="name" placeholder="Name">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <label for="message">Message</label>
-                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
-                        <input type="submit" name="Send" id="submit" value="Send">
-                    </form>
-                </fieldset>
+            <div class="personal">
+              <img src="../images/address.png" alt="email" />
+              <p>Address: Addis Ababa, Ethiopia</p>
             </div>
-            <div id="fourth">
-                <h1>Or Personally</h1>
-                <aside>
-                    <div class="personal">
-                        <img src="../images/email.png" alt="email">
-                        <p>Email: </p>
-                        <a href="mailto:yaredtsegaye120@gmail.com">yaredtsegaye120@gmail.com</a>
-                    </div>
-                    <div class="personal">
-                        <img src="../images/call.png" alt="email">
-                        <p>Tel:  +251982985676</p>
-                        
-                    </div>
-                    <div class="personal">
-                        <img src="../images/address.png" alt="email">
-                        <p>Address: Addis Ababa, Ethiopia</p>
-                    </div>
-                    
-                </aside>
-            </div>
-    </div>
+          </aside>
+        </div>
+      </div>
     </main>
     <footer>
-        <div>
-            <p>&copy;Copyright Yared Tsegaye</p>
-            <div id="icons">
-                <a href=""><img src="../images/facebook-icon.png" alt="facebook icon"></a>
-                <a href=""><img src="../images/linkedin-logo.png" alt="linkedin icon"></a>
-                <a href=""><img src="../images/twitter-logo.png" alt="twitter icon"></a>
-                <a href=""><img src="../images/instagram.png" alt="instagram icon"></a>
-            </div>
+      <div>
+        <p>&copy;Copyright Yared Tsegaye</p>
+        <div id="icons">
+          <a href=""
+            ><img src="../images/facebook-icon.png" alt="facebook icon"
+          /></a>
+          <a href=""
+            ><img src="../images/linkedin-logo.png" alt="linkedin icon"
+          /></a>
+          <a href=""
+            ><img src="../images/twitter-logo.png" alt="twitter icon"
+          /></a>
+          <a href=""
+            ><img src="../images/instagram.png" alt="instagram icon"
+          /></a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
